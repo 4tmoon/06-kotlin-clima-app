@@ -1,5 +1,8 @@
 package com.github.atmoon.clima_app.data.remote.dto
 
+import com.github.atmoon.clima_app.domain.model.City
+import com.github.atmoon.clima_app.domain.model.WeatherForecast
+
 fun GeocodingResultDto.toDomain(): City = City(
     id = id,
     name = name,
